@@ -1,0 +1,224 @@
+.jq-time-popup {
+    border: 1px solid #CCC;
+    width: 248px;
+    height: 296px;
+    background: rgb(231, 231, 231);
+    box-shadow: 2px 3px 5px #DDD;
+    border-radius: 4px;
+    font-family: sans-serif;
+}
+div.jq-hour-pad {
+    height: 217px;
+}
+.jq-time-popup .jq-time-hour {
+    float: left;
+    border: 1px solid #777;
+    padding: 2px;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 60px;
+    height: 30px;
+    background-color: #FFF;
+    box-shadow: inset 0px 0px 5px;
+    border-radius: 4px;
+}
+.jq-time-popup .jq-time-hour .jq-time-input {
+    width: 55px;
+    height: 28px;
+    font-size: 25px;
+    float: right;
+    border-width: 0px;
+    text-align: right;
+    background-color: #C2C2C2;
+    color: #777;
+    padding-right: 5px;
+}
+.jq-time-popup .jq-time-hour .jq-time-input:focus {
+    color: #353535;
+    background-color: transparent;
+}
+.jq-time-popup .jq-time-minute {
+    float: left;
+    border: 1px solid #777;
+    padding: 2px;
+    margin-top: 5px;
+    width: 60px;
+    height: 30px;
+    background-color: #FFF;
+    box-shadow: inset 0px 0px 5px;
+    border-radius: 4px;
+}
+.jq-time-popup .jq-time-minute .jq-time-input {
+    width: 55px;
+    height: 28px;
+    font-size: 25px;
+    float: right;
+    border-width: 0px;
+    text-align: left;
+    background-color: #C2C2C2;
+    color: #777;
+    padding-left: 5px;
+}
+.jq-time-popup .jq-time-minute .jq-time-input:focus {
+    color: #353535;
+    background-color: transparent;
+}
+.jq-time-popup .jq-time-am {
+    position: absolute;
+    width: 60px;
+    text-align: center;
+    margin-left: 6px;
+    border: 1px solid #7C7C7C;
+    margin-top: 3px;
+    height: 20px;
+    padding: 4px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #FFF;
+    background-color: #7C7C7C;
+    box-shadow: inset 0px 0px 50px #969BA0;
+    opacity: 0.6;
+}
+.jq-time-popup .jq-time-am.jq-selected {
+    box-shadow: inset 0px 0px 50px #DD2D04;
+    opacity: 1;
+}
+.jq-time-popup .jq-time-pm {
+    position: absolute;
+    width: 60px;
+    text-align: center;
+    margin-left: 160px;
+    border: 1px solid #7C7C7C;
+    margin-top: 3px;
+    height: 20px;
+    padding: 4px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #FFF;
+    background-color: #7C7C7C;
+    box-shadow: inset 0px 0px 50px #969BA0;
+    opacity: 0.6;
+}
+.jq-time-popup .jq-time-am.jq-selected {
+    box-shadow: inset 0px 0px 50px #DD2D04;
+    opacity: 1;
+}
+.jq-time-popup .jq-close-picker {
+    float: left;
+    border: 1px solid #FF6969;
+    display: block;
+    height: 30px;
+    padding: 2px;
+    margin-top: 5px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 4px;
+    color: #FFF;
+    background-color: #FF7D7D;
+    width: 68px;
+    cursor: pointer;
+    box-shadow: inset -1px -2px 15px rgb(255, 87, 87);
+}
+.jq-time-popup .jq-close-picker:hover {
+    box-shadow: inset -1px -2px 15px rgb(192, 86, 86);
+    background-color: #D56D6D;
+}
+.jq-time-popup .jq-time-sep {
+    float: left;
+    font-size: 30px;
+    padding: 4px;
+}
+.jq-time-popup .jq-time-numpad {
+    border: 1px solid #777;
+    margin-top: 46px;
+    margin-left: 5px;
+    width: 236px;
+    height: 244px;
+    background-color: #16567C;
+    border-radius: 4px;
+    box-shadow: inset 0px 0px 2px #FFFFFF;
+}
+.jq-time-popup div.jq-hour-pad {
+    height: 165px;
+}
+.jq-time-popup .jq-time-numpad .jq-numpad-num {
+    position: relative;
+    border: 1px solid #BABABA;
+    border-radius: 4px;
+    width: 25px;
+    height: 22px;
+    margin: 6px 6px;
+    padding-top: 5px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    float: left;
+    box-shadow: inset -1px -2px 15px rgb(117, 108, 255);
+}
+.jq-time-popup .jq-time-numpad .jq-numpad-num.num-selected {
+    border: 1px solid #FFD332;
+    color: #333;
+    background-color: #FFDF3C;
+    box-shadow: none;
+}
+.jq-time-popup .jq-time-numpad .jq-numpad-next {
+    top: 5px;
+    text-align: center;
+    position: relative;
+    display: block;
+    float: left;
+    margin-left: 102px;
+}
+.jq-time-popup .jq-time-numpad .jq-numpad-next .jq-num-next {
+    z-index: 20;
+    color: #888;
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+}
+.jq-time-popup .jq-time-numpad .jq-numpad-next::after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-left: 15px solid transparent;
+    border-top: 20px solid #DDD;
+    border-right: 15px solid transparent;
+    position: relative;
+    top: 3px;
+    cursor: pointer;
+}
+.jq-time-popup .jq-time-numpad .jq-numpad-prev {
+    top: -5px;
+    text-align: center;
+    position: relative;
+    display: block;
+    float: left;
+    margin-left: 102px;
+}
+.jq-time-popup .jq-time-numpad .jq-numpad-prev .jq-num-prev {
+    z-index: 20;
+    color: #888;
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+}
+.jq-time-popup .jq-time-numpad .jq-numpad-prev::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-left: 15px solid transparent;
+    border-bottom: 20px solid #DDD;
+    border-right: 15px solid transparent;
+    position: relative;
+    cursor: pointer;
+}
+.jq-hide {
+    display: none !important;
+}
+.clearfix {
+    width: 100%;
+    display: table;
+}
