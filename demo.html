@@ -22,7 +22,15 @@
 
     <!-- jQtimepicker plugin -->
     <script type="text/javascript">
-    $('#timepicker').jQtimepicker();
+        var options = {
+            stepMinutes: 1,
+            disableHours: ['0-5', 4, 3],
+            minHours: 0,
+            maxHours: 23,
+            format24Hr: false,
+            defaultTime: '08:00'
+        };
+    $('#timepicker').jQtimepicker(options);
     </script>
     <!-- jQtimepicker end -->
 </body>
